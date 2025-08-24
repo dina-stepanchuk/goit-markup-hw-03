@@ -18,12 +18,41 @@ ul {
 
 h1,
 h2,
-h3 {
+h3,
+p {
   margin: 0;
 }
 
 a {
   text-decoration: none;
+}
+
+.container {
+  width: 100%;
+  max-width: 1158px;
+  margin: 0 auto;
+}
+
+.page-header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px 156px 24px 156px;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  gap: 76px;
+}
+
+.list-items {
+  display: flex;
+  gap: 40px;
+}
+.nav-contacts-list {
+  display: flex;
+  gap: 40px;
 }
 
 .logo {
@@ -70,8 +99,15 @@ address {
 }
 .main-title {
   background-color: #2e2f42;
+  padding: 188px 472px 292px 472px;
 }
 
+.main-title-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 48px;
+}
 .title {
   color: #ffffff;
   font-size: 56px;
@@ -89,11 +125,33 @@ address {
   line-height: 1.5;
   text-align: center;
   cursor: pointer;
+  border-radius: 4px;
+  padding: 16px 32px;
+  width: 169px;
+  height: 56px;
 }
 
 .button:hover,
 .button:focus {
   background-color: #404bbf;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.studio-list {
+  display: flex;
+  gap: 24px;
 }
 
 .studio-title {
@@ -102,15 +160,18 @@ address {
   font-weight: 500;
   line-height: 1.2;
   letter-spacing: 0.02em;
+  margin-bottom: 8px;
 }
 
 .studio-text {
   line-height: 1.5;
   letter-spacing: 0.02em;
+  margin-bottom: 120px;
 }
 
 .section-team {
   background-color: #f4f4fd;
+  padding: 120px 156px;
 }
 
 .team {
@@ -121,9 +182,19 @@ address {
   letter-spacing: 0.02em;
   text-transform: capitalize;
   text-align: center;
+  padding-bottom: 72px;
 }
+.team-list {
+  display: flex;
+  gap: 24px;
+}
+
 .team-photo {
   background-color: #ffffff;
+  border-radius: 0 0 4px 4px;
+  padding: 0px 0px 32px;
+  width: 264px;
+  height: 380px;
 }
 
 .team-title {
@@ -133,12 +204,14 @@ address {
   line-height: 1.2;
   letter-spacing: 0.02em;
   text-align: center;
+  padding-bottom: 8px;
 }
 
 .team-text {
   line-height: 1.5;
   letter-spacing: 0.02em;
   text-align: center;
+  padding-bottom: 32px;
 }
 
 .portfolio {
@@ -149,6 +222,14 @@ address {
   letter-spacing: 0.02em;
   text-transform: capitalize;
   text-align: center;
+  margin-top: 120px;
+}
+
+.portfolio-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  margin-top: 72px;
 }
 
 .portfolio-title {
@@ -157,15 +238,19 @@ address {
   font-weight: 500;
   line-height: 1.2;
   letter-spacing: 0.02em;
+  padding: 120px 611px;
+  padding-top: 32px;
 }
 
 .portfolio-text {
   line-height: 1.5;
   letter-spacing: 0.02em;
+  padding-bottom: 32px;
 }
 
 .page-footer {
   background-color: #2e2f42;
+  padding: 100px 1020px 100px 156px;
 }
 
 .logo-footer {
@@ -177,6 +262,7 @@ address {
   letter-spacing: 0.03em;
   text-decoration: none;
   text-transform: uppercase;
+  padding-bottom: 16px;
 }
 
 .other-logo {
